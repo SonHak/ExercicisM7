@@ -18,7 +18,7 @@ $totalDiasMes = date("t");
 		</tr>
 		
 	<?php
-		for($i=1;$i <=totalDiasMes;$i++){
+		for($i=1;$i <=$totalDiasMes;$i++){
 			echo "<td> $i </td>";
 			if ($i == 7){
 				echo "<tr></tr>\n";
