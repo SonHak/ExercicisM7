@@ -12,7 +12,7 @@ $diaSemana=date("w",mktime(0,0,0,$mes,1,$año))+7;
 	<body>
 		
 	<table>
-		<th><?php echo "Mes: ".$date("M") . "  Año: ".$año  ?></th>
+		<th><?php echo "Mes: ". date("M") . "  Año: ".$año  ?></th>
 		<tr>
 			<th>Lun</th><th>Mar</th><th>Mie</th><th>Jue</th>
 			<th>Vie</th><th>Sab</th><th>Dom</th>
