@@ -7,7 +7,7 @@ $diaSemana=date("w",mktime(0,0,0,$mes,1,$año));
 ?>
 <html>
 	<style>
-		td{border: 1px solid black; width: 50px;height: 50px;background-color: blue;}
+		td{border: 1px solid black; width: 50px;height: 50px;background-color: #66ccff;}
 	</style>
 	<body>
 		
