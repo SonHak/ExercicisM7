@@ -19,13 +19,13 @@ $diaSemana=date("w",mktime(0,0,0,$mes,1,$año));
 		</tr>
 		<tr>
 			<?php
-				$last_cell=$diaSemana+$ultimoDiaMes;
+				$ultima_celda=$diaSemana+$totalDiasMes;
 				for($i=1;$i <=$totalDiasMes;$i++){
 					if($i==$diaSemana)
 						{
 							$dia=1;
 						}
-					else if($i<=$diaSemana || $i>=$last_cell){
+					else if($i<=$diaSemana || $i>=$ultima_celda){
 							echo "<td>&nbsp;</td>";
 					}
 					else{
