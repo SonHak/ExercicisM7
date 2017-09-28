@@ -1,5 +1,5 @@
 <?php
-$dia = date("j");
+$diaActual = date("j");
 $mes = date("n");
 $año = date("Y");
 $totalDiasMes = date("t");
@@ -20,13 +20,31 @@ $diaSemana=date("w",mktime(0,0,0,$mes,1,$año));
 		<tr>
 			<?php
 			
-			//	for($i=1;$i <=$totalDiasMes;$i++){
+				for($i=1;$i <=$totalDiasMes;$i++){
 					echo "<td> $diaSemana </td>";
-				//	if ($i == 7){
-				//		echo "<tr></tr>\n";
-				//		}
-				//	}
+					if($i==$diaSemana)
+						{
+							$day=1;
 
+						}
+			if($i<$diaSemana || $i>=$totalDiasMes){
+					echo "<td>&nbsp;</td>";
+			}
+			else{
+				if($day==$diaActual)
+
+					echo "<td class='hoy'>$day</td>";
+
+				else
+
+					echo "<td>$day</td>";
+
+				$day++;
+
+			}
+			if ($i%7 ==0){
+					echo "<tr></tr>\n";
+				}
 					
 
 
