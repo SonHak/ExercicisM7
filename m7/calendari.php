@@ -9,7 +9,8 @@
 			<th>Vie</th><th>Sab</th><th>Dom</th>
 		</tr>
 	<?php
-		$mesos = ("Dilluns";"Dimarts";"Dimecres";"Dijous";"Divendres";"Dissabte";"Diumenge")
+		$meses = array(1=> "Enero","Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio",
+					   "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre");
 		
 		echo "<td>2</td>";
 			
