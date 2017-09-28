@@ -3,6 +3,7 @@ $dia = date("j");
 $mes = date("n");
 $año = date("Y");
 $totalDiasMes = date("t");
+$diaSemana=date("w",mktime(0,0,0,$month,1,$year))
 ?>
 <html>
 	<style>
@@ -20,7 +21,7 @@ $totalDiasMes = date("t");
 			<?php
 			
 			//	for($i=1;$i <=$totalDiasMes;$i++){
-					echo "<td> $dia </td>";
+					echo "<td> $diaSemana </td>";
 				//	if ($i == 7){
 				//		echo "<tr></tr>\n";
 				//		}
