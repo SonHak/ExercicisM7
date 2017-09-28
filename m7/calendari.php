@@ -32,10 +32,11 @@ $diaSemana=date("w",mktime(0,0,0,$mes,1,$año));
 						if($dia==$diaActual){
 
 							echo "<td>$dia</td>";
-							$dia++;
+							
 						}else{
 							echo "<td>$dia</td>";
 						}	
+					$dia++;
 				}
 				if ($i%7 == 0){
 						echo "<tr></tr>\n";
