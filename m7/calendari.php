@@ -2,8 +2,8 @@
 $dia = date("j");
 $mes = date("n");
 $año = date("Y");
-$diaSemana=date("w",mktime(0,0,0,$month,1,$year))+7;
-$ultimoDiaMes=date("d",(mktime(0,0,0,$month+1,1,$year)-1));
+$diaSemana=date("w",mktime(0,0,0,$mes,1,$año))+7;
+$ultimoDiaMes=date("d",(mktime(0,0,0,$mes+1,1,$año)-1));
 ?>
 <html>
 	<style>
