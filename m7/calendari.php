@@ -12,7 +12,7 @@ $diaSemana=date("w",mktime(0,0,0,$mes,1,$año))+7;
 	<body>
 		
 	<table>
-		<th><?php echo "Mes: ".$mes. "  Año: ".$año  ?></th>
+		<th><?php echo "Mes: ".$date("M") . "  Año: ".$año  ?></th>
 		<tr>
 			<th>Lun</th><th>Mar</th><th>Mie</th><th>Jue</th>
 			<th>Vie</th><th>Sab</th><th>Dom</th>
@@ -20,6 +20,9 @@ $diaSemana=date("w",mktime(0,0,0,$mes,1,$año))+7;
 		<tr>
 			<?php
 				$ultima_celda=$diaSemana+$totalDiasMes;
+				echo "ESTO ES diasemana: " . $diaSemana;
+				echo "ESTO ES totalDiasMes: ". $totalDiasMes;
+				
 				for($i=1;$i <=42;$i++){
 					if($i==$diaSemana)
 						{
