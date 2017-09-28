@@ -26,7 +26,7 @@ $diaSemana=date("w",mktime(0,0,0,$mes,1,$año));
 							$dia=1;
 						}
 					else if($i<=$diaSemana || $i>=$totalDiasMes){
-							echo "<td>aquí no hay nada</td>";
+							echo "<td>&nbsp;</td>";
 					}
 					else{
 						if($dia==$diaActual){
@@ -39,7 +39,7 @@ $diaSemana=date("w",mktime(0,0,0,$mes,1,$año));
 					$dia++;
 				}
 				if ($i%7 == 0){
-						echo "<tr></tr>\n";
+						echo "<tr> </tr>\n";
 					}
 			    }
 			?>
