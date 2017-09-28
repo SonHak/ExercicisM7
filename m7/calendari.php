@@ -11,8 +11,10 @@
 	<?php
 		$meses = array(1=> "Enero","Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio",
 					   "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre");
-		
-		echo "<td>2</td>";
+		$mes = date("n");
+		$dia = date("j");
+		$ano = date ("Y");
+		echo "<td>$mes . $dia . $ano </td>";
 			
 
 
