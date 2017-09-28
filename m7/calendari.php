@@ -9,7 +9,7 @@
 			<th>Vie</th><th>Sab</th><th>Dom</th>
 		</tr>
 	<?php
-		$mesos = ("Dilluns","Dimarts","Dimecres","Dijous","Divendres","Dissabte","Diumenge")
+		$mesos = ("Dilluns";"Dimarts";"Dimecres";"Dijous";"Divendres";"Dissabte";"Diumenge")
 		
 		echo "<td>2</td>";
 			
