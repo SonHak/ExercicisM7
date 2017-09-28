@@ -3,7 +3,7 @@ $dia = date("j");
 $mes = date("n");
 $año = date("Y");
 $totalDiasMes = date("t");
-$diaSemana=date("w",mktime(0,0,0,$month,1,$year))
+$diaSemana=date("w",mktime(0,0,0,$month,1,$year));
 ?>
 <html>
 	<style>
