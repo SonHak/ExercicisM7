@@ -1,6 +1,8 @@
+<?php
 $dia = date("j");
 $mes = date("n");
 $año = date("Y");
+?>
 <html>
 	<style>
 		td{border: 1px solid black; width: 100px;height: 100px;}
@@ -16,8 +18,7 @@ $año = date("Y");
 		$meses = array(1=> "Enero","Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio",
 					   "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre");
 		
-		
-		echo "<td>$mes . $dia . $ano </td>";
+
 			
 
 
