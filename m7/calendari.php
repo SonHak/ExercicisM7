@@ -16,20 +16,21 @@ $totalDiasMes = date("t");
 			<th>Lun</th><th>Mar</th><th>Mie</th><th>Jue</th>
 			<th>Vie</th><th>Sab</th><th>Dom</th>
 		</tr>
-		
-	<?php
-		for($i=1;$i <=$totalDiasMes;$i++){
-			echo "<td> $i </td>";
-			if ($i == 7){
-				echo "<tr></tr>\n";
-				}
-			}
-
+		<tr>
+			<?php
 			
+			//	for($i=1;$i <=$totalDiasMes;$i++){
+					echo "<td> $dia </td>";
+				//	if ($i == 7){
+				//		echo "<tr></tr>\n";
+				//		}
+				//	}
+
+					
 
 
-	?>
-
+			?>
+		</tr>
 	</table>
 	</body>
 </html>
