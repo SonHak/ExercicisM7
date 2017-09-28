@@ -25,29 +25,26 @@ $diaSemana=date("w",mktime(0,0,0,$mes,1,$año));
 					if($i==$diaSemana)
 						{
 							$day=1;
-
 						}
-			if($i<$diaSemana || $i>=$totalDiasMes){
-					echo "<td>&nbsp;</td>";
-			}
-			else{
-				if($day==$diaActual)
+					else if($i<$diaSemana || $i>=$totalDiasMes){
+							echo "<td>&nbsp;</td>";
+					}
+					else{
+						if($day==$diaActual)
 
-					echo "<td class='hoy'>$day</td>";
+							echo "<td class='hoy'>$day</td>";
 
-				else
+						else
 
-					echo "<td>$day</td>";
+							echo "<td>$day</td>";
 
-				$day++;
+						$day++;
 
-			}
+					}
+				}
 			if ($i%7 ==0){
 					echo "<tr></tr>\n";
 				}
-					
-
-
 			?>
 		</tr>
 	</table>
