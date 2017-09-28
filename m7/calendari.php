@@ -21,28 +21,22 @@ $diaSemana=date("w",mktime(0,0,0,$mes,1,$año));
 			<?php
 			
 				for($i=1;$i <=$totalDiasMes;$i++){
-					echo "<td> $diaSemana </td>";
 					if($i==$diaSemana)
 						{
-							$day=1;
+							$dia=1;
 						}
 					else if($i<$diaSemana || $i>=$totalDiasMes){
 							echo "<td>&nbsp;</td>";
 					}
 					else{
-						if($day==$diaActual)
+						if($dia==$diaActual)
 
-							echo "<td class='hoy'>$day</td>";
-
-						else
-
-							echo "<td>$day</td>";
-
-						$day++;
+							echo "<td>$dia</td>";
+							$day++;
 
 					}
 				}
-			if ($i%7 ==0){
+			if ($i%7 == 0){
 					echo "<tr></tr>\n";
 				}
 			?>
