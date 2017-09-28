@@ -38,7 +38,7 @@ $diaSemana=date("w",mktime(0,0,0,$mes,1,$año));
 						}	
 					$dia++;
 				}
-				if ($i%7 == 0){
+				if ($i%8 == 0){
 						echo "<tr> </tr>\n";
 					}
 			    }
