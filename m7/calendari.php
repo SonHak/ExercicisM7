@@ -2,6 +2,8 @@
 $dia = date("j");
 $mes = date("n");
 $año = date("Y");
+$diaSemana=date("w",mktime(0,0,0,$month,1,$year))+7;
+$ultimoDiaMes=date("d",(mktime(0,0,0,$month+1,1,$year)-1));
 ?>
 <html>
 	<style>
@@ -17,7 +19,7 @@ $año = date("Y");
 	<?php
 		$meses = array(1=> "Enero","Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio",
 					   "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre");
-		
+		echo $diaSemana . $ultimoDiaMes;
 
 			
 
