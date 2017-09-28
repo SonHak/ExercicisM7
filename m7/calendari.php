@@ -20,7 +20,7 @@ $diaSemana=date("w",mktime(0,0,0,$mes,1,$año));
 		<tr>
 			<?php
 				$ultima_celda=$diaSemana+$totalDiasMes;
-				for($i=1;$i <=$totalDiasMes;$i++){
+				for($i=1;$i <=$42;$i++){
 					if($i==$diaSemana)
 						{
 							$dia=1;
