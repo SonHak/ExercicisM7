@@ -8,6 +8,7 @@ $diaSemana=date("w",mktime(0,0,0,$mes,1,$año));
 <html>
 	<style>
 		td{border: 1px solid black; width: 50px;height: 50px;background-color: #66ccff;}
+		#actual {background-color: red;}
 	</style>
 	<body>
 		
@@ -24,13 +25,13 @@ $diaSemana=date("w",mktime(0,0,0,$mes,1,$año));
 						{
 							$dia=1;
 						}
-					else if($i<=$diaSemana){
+					else if($i<=$diaSemana || $i>$totalDiasMes){
 							echo "<td>&nbsp;</td>";
 					}
 					else{
 						if($dia==$diaActual){
 
-							echo "<td>$dia</td>";
+							echo "<td id='actual'>$dia</td>";
 							
 						}else{
 							echo "<td>$dia</td>";
