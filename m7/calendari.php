@@ -19,16 +19,12 @@ $diaSemana=date("w",mktime(0,0,0,$mes,1,$año));
 		</tr>
 		<tr>
 			<?php
-				$ultima_celda=$diaSemana+$totalDiasMes;
-				echo "ESTO ES diasemana: " . $diaSemana;
-				echo "ESTO ES totalDiasMes: ". $totalDiasMes;
-				
-				for($i=0;$i <=42;$i++){
+				for($i=1;$i <=42;$i++){
 					if($i==$diaSemana)
 						{
 							$dia=1;
 						}
-					else if($i<=$diaSemana || $i>=$ultima_celda){
+					else if($i<=$diaSemana){
 							echo "<td>&nbsp;</td>";
 					}
 					else{
@@ -42,7 +38,7 @@ $diaSemana=date("w",mktime(0,0,0,$mes,1,$año));
 					$dia++;
 				}
 				if ($i%7 == 0){
-						echo "<tr> </tr>\n";
+						echo "<tr></tr>\n";
 					}
 			    }
 			?>
