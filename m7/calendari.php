@@ -23,12 +23,12 @@ $diaSemana=date("w",mktime(0,0,0,$mes,1,$año));
 				echo "ESTO ES diasemana: " . $diaSemana;
 				echo "ESTO ES totalDiasMes: ". $totalDiasMes;
 				
-				for($i=1;$i <=42;$i++){
+				for($i=0;$i <=42;$i++){
 					if($i==$diaSemana)
 						{
 							$dia=1;
 						}
-					else if($i<=$diaSemana || $i>$ultima_celda){
+					else if($i<=$diaSemana || $i>=$ultima_celda){
 							echo "<td>&nbsp;</td>";
 					}
 					else{
