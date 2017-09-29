@@ -13,7 +13,7 @@ $diaSemana=date("w",mktime(0,0,0,$mes,1,$año));
 	<body>
 		
 	<table>
-		<th><?php echo "Mes: ". date("M") . "  Año: ".$año  ?></th>
+		<th><?php echo "Mes: " + date("M") . "  Año: ".$año  ?></th>
 		<tr>
 			<th>Lun</th><th>Mar</th><th>Mie</th><th>Jue</th>
 			<th>Vie</th><th>Sab</th><th>Dom</th>
@@ -34,9 +34,8 @@ $diaSemana=date("w",mktime(0,0,0,$mes,1,$año));
 							echo "<td id='actual'>$dia</td>";
 							
 						}else{
-							echo "<td>$dia</td>";
+							echo "<td>$i</td>";
 						}	
-					$dia++;
 				}
 				if ($i%7 == 0){
 						echo "<tr></tr>\n";
