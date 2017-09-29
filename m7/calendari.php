@@ -28,7 +28,7 @@ $diaSemana=date("w",mktime(0,0,0,$mes,1,$año));
 						{
 							$dia=1;
 						}
-					else if($i<=$diaSemana || $i>=$ultima_celda){
+					else if($i<=$diaSemana || $i>$ultima_celda){
 							echo "<td>&nbsp;</td>";
 					}
 					else{
