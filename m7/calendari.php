@@ -24,7 +24,6 @@ $diaSemana=date("w",mktime(0,0,0,$mes,1,$año));
 				for($i=1;$i <=42;$i++){
 					if ($i == $diaSemana)
 					{
-						
 						echo "<td> $dia </td>";
 					}
 					else if ($i < $diaSemana || $i > $totalDiasMes)
@@ -34,8 +33,9 @@ $diaSemana=date("w",mktime(0,0,0,$mes,1,$año));
 					else 
 					{
 						echo "<td> $dia </td>";
+						$dia++;
 					}
-					$dia++;
+
 					if ($i % 7 == 0){
 							echo "<tr></tr>";
 					}
