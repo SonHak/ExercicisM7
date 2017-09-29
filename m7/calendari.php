@@ -21,7 +21,11 @@ $diaSemana=date("w",mktime(0,0,0,$mes,1,$año));
 		<tr>
 			<?php
 				for($i=1;$i <=42;$i++){
-					echo "<td> $i </td>";
+					if ($i == $diaSemana){
+						echo "<td> $i </td>";
+					}else{
+						 echo "<td> &nbsp; </td>";
+						}
 					if ($i % 7 == 0){
 							echo "<tr></tr>";
 					}
