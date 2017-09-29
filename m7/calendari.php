@@ -21,15 +21,24 @@ $diaSemana=date("w",mktime(0,0,0,$mes,1,$año));
 		<tr>
 			<?php
 				for($i=1;$i <=42;$i++){
-					if ($i == $diaSemana){
-						echo "<td> $i </td>";
-					}else{
+					if ($i == $diaSemana)
+					{
+						$dia = 1;
+						echo "<td> $dia </td>";
+					}
+					else if ($i < $diaSemana || $i > $totalDiasMes)
+					{
 						 echo "<td> &nbsp; </td>";
-						}
+					}
+					else 
+					{
+						echo "<td> $dia </td>";
+					}
+					$dia++;
+					
 					if ($i % 7 == 0){
 							echo "<tr></tr>";
 					}
-					
 				}
 			?>
 		</tr>
